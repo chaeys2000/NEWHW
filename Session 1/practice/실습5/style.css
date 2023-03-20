@@ -1,0 +1,29 @@
+.container {
+    width: 50%;
+    height: 70px;;
+    border-radius: 0px;
+    background-color: black;
+    margin: 0 auto;
+}
+img{
+    width: 6%;
+   border-radius: 10px;
+   position:absolute;
+   left:30%;
+   top:2%
+}
+p{
+    color:white;
+    left: 1%;
+    position:absolute;
+    left:38%;
+    top: -0.5%
+} 
+.num{
+    color:gray;
+    left: 20%;
+    position:absolute;
+    left:38%;
+   
+}
+

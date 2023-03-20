@@ -1,0 +1,307 @@
+.container{
+    width: 375px;
+    height: 845px;
+    border:solid 1px black;
+    position: relative;
+    margin: 0px auto;
+    background: #F2F3F5;
+    padding: 0;
+    overflow: hidden;
+}
+.time{
+    position: absolute;
+    top: 13px;
+    left: 20px;
+}
+.battery
+{
+    position: absolute;
+    height: 7x;
+    width: 18px;
+    left: 350px;
+    top: 20px;
+    border-radius: 0px;
+}
+ .wifi
+{
+    position:absolute;
+    height: 11px;
+    width: 15.333325386047363px;
+    left: 330px;
+    top: 17.3306884765625px;  
+}
+ .signal{
+   position:absolute;
+   height: 10.6px;
+   width: 17px;
+   left: 305px;
+   top: 17.6px;
+   border-radius: 0px;
+ }
+
+ .bankbox
+ {
+    width: 295px;
+    height: 100px;
+    top: 110px;
+    position: absolute;
+    background: white;
+    margin: 0 auto;
+    border-radius: 30px;
+    left: 20px;
+    padding:20px;
+  }
+ .b1{
+    position:absolute;
+    margin: 0px; 
+}
+  .b2{
+   position:absolute;
+   margin: 0px;
+   width: 40px;
+   height:20px;
+   background: pink;
+   text-align: center;
+   border-radius: 10px;
+   left: 65px;
+   top: 22px;  
+}
+ .invest1{
+    position:absolute;
+    top:60px;
+    left: 80px;
+    font-size: 14px;
+}
+ .invest2{
+    position:absolute;
+    top: 60px;
+    left: 80px;
+}
+.assetbox{
+    position:absolute;
+    width: 295px;
+    height: 100px;
+    background: white;
+    border-radius: 30px;
+    margin: 0 auto;
+    padding: 20px;
+    top: 260px;
+    left: 20px;
+}
+.down{
+    position:absolute;
+    width: 375px;
+    background: white;
+    height: 100px;
+    top: 775px;
+    z-index: 1;
+   border-radius: 13px;
+  
+}
+.d1{
+    position:absolute;
+    left: 35px;
+}
+.cal
+{
+   top:55px;
+   position: absolute;
+}
+.cir{
+   position: absolute;
+   top: 63px;
+}
+.toss{
+   position: absolute;
+   top: 40px;
+   left: 20px;
+}
+.toss1{
+   position:absolute;
+   left:275px;
+   top: 30px;
+}
+.mm{
+   margin: 0px;
+   position:absolute;
+}
+.bankc{
+   position: absolute;
+   top: 60px;
+   margin:0px;
+}
+.v2{
+   position:absolute;
+    left: 300px;
+    width: 7px;
+    height: 10px;
+    top:82px;
+    color:#F2F3F5;
+}
+.ubar{
+   position: absolute;
+   width: 96%;
+   top: 5px;
+   left:7px;
+}
+.ac1{
+   position: absolute;
+   margin: 0px;
+   left: 80px;
+   top: 65px;
+   font-size: 14px;
+}
+.ac11{
+   left: 80px;
+   top: 85px;
+   position: absolute;
+   margin: 0px;
+}
+.minibox{
+   background:#F2F3F5;
+   width:45px;
+   height: 22px;
+   border-radius: 5px;
+   text-align: center;
+   left: 260px;
+   top:75px;
+   position: absolute;
+   font-size:13px;
+}
+.minibox6{
+   background:#F2F3F5;
+   width:45px;
+   height: 22px;
+   border-radius: 5px;
+   text-align: center;
+   left: 280px;
+   top:18px;
+   position: absolute;
+}
+.all{
+   position:absolute;
+   height: 150px;
+   width: 135px;
+   margin: 20px;
+   background-color: white;
+   border-radius: 30px;
+   top:390px;
+}
+  
+
+.x1{
+   left: 147px; 
+   position:absolute;   
+   height: 150px;
+   width: 135px;
+   margin: 20px;
+   background-color: white;
+   border-radius: 30px;
+   top:390px;
+}
+
+.x2{
+   left: 295px;
+   position: absolute;
+   height: 150px;
+   width: 135px;
+   margin: 20px;
+   background-color: white;
+   border-radius: 30px;
+   top:390px;
+}
+.tt{
+   left: 80px;
+   top: 100px;
+   position: absolute;
+}
+.t2{
+   left: 80px;
+   top: 100px;
+   position: absolute;
+}
+
+.pr{
+   position: absolute;
+   left: 123px;
+   top: 700px;
+   font-size: small;
+   color: gray;
+   
+}
+.safe{
+   position: absolute;
+   font-size: 14px;
+   left: 20px;
+   top: 15px;
+   
+}
+.safe3{
+   position: absolute;
+   font-size: 14px;
+   left: 20px;
+   top: 15px;
+}
+.safe5{
+   position: absolute;
+   font-size: 14px;
+   left: 20px;
+   top: 15px;
+}
+.safe2{
+   position: absolute;
+   left: 20px;
+   top: 16px;
+}
+.safe4{
+   position: absolute;
+   left: 20px;
+   top: 16px;
+}
+.safe6{
+   position: absolute;
+   left: 20px;
+   top: 16px;
+}
+.last{
+   position: absolute;
+   width: 120px;
+   height: 40px;
+   background: #E6E9EE;
+   border-radius: 10px;
+   top: 600px;
+   left: 65px;
+}
+.last2{
+   position: absolute;
+   width: 120px;
+   height: 40px;
+   background: #E6E9EE;
+   border-radius: 10px;
+   top: 600px;
+   left: 195px;
+}
+.top1{
+   position: absolute;
+   top: 6px;
+   left: 10px
+
+}
+.w1{
+   position: absolute;
+   top: 11px;
+   left: 40px;
+   font-size: 14px;
+}
+.top2{
+   position: absolute;
+   top: 11px;
+   left: 10px
+
+}
+.w2{
+   position: absolute;
+   top: 11px;
+   left: 40px;
+   font-size: 14px;
+}

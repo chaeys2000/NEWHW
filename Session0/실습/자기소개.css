@@ -1,0 +1,36 @@
+.container {
+    width: 90%;
+    color: white;
+    /* background-color: aliceblue; */
+    margin: 0 auto;
+    border: 10px solid violet;
+    padding: 30px;
+    border-radius: 20px;
+    margin: 60px;
+  }
+  #contentWrapper {
+    max-width: 430px;
+  
+    margin: 0 auto;
+  }
+body{
+    background-color: black;
+    color: whitesmoke;
+}
+
+img {
+    max-width: 300px;
+}
+
+
+    mark {
+        color: whitesmoke;
+        background-color: black;
+    }
+
+  a:visited {color:antiquewhite}
+
+    
+
+
+  

@@ -1,0 +1,270 @@
+.container{
+    width: 375px;
+    height: 845px;
+    border:solid 1px black;
+    position: relative;
+    margin: 0px auto;
+    background: #F2F3F5;
+    padding: 0;
+    overflow: hidden;
+}
+.time{
+    position: absolute;
+    top: 13px;
+    left: 20px;
+}
+.battery{
+    position: absolute;
+    height: 7x;
+    width: 18px;
+    left: 350px;
+    top: 20px;
+    border-radius: 0px;
+ 
+ }
+ .wifi{
+    position:absolute;
+    height: 11px;
+    width: 15.333325386047363px;
+    left: 330px;
+    top: 17.3306884765625px;
+    
+ }
+ .signal{
+   position:absolute;
+   height: 10.6px;
+   width: 17px;
+   left: 305px;
+   top: 17.6px;
+   border-radius: 0px;
+ }
+
+ .bankbox{
+    width: 295px;
+    height: 120px;
+    top: 88px;
+    position: absolute;
+    background: white;
+    margin: 0 auto;
+    border-radius: 30px;
+    left: 20px;
+    padding:20px;
+ }
+ .b1{
+    position:absolute;
+    margin: 0px; 
+ }
+ .vector{
+    position:absolute;
+    left: 300px;
+    width: 7px;
+    height: 10px;
+    top:28px;
+    color:#F2F3F5;
+ }
+ .invest1{
+    position:absolute;
+    top:77px;
+    left: 80px;
+    font-size: 14px;
+ }
+ .invest2{
+    position:absolute;
+    top: 85px;
+    left: 80px;
+ }
+.assetbox{
+    position:absolute;
+    width: 295px;
+    height: 600px;
+    background: white;
+    border-radius: 30px;
+    margin: 0 auto;
+    padding: 20px;
+    top: 260px;
+    left: 20px;
+}
+.down{
+    position:absolute;
+    width: 375px;
+    background: white;
+    height: 180px;
+    top: 700px;
+    border-radius:30px;
+    z-index: 1;
+  
+}
+.d1{
+    position:absolute;
+    left: 35px;
+}
+.cal
+{
+   top:75px;
+   position: absolute;
+
+}
+.toss{
+   position: absolute;
+   top: 40px;
+   left: 20px;
+}
+.toss1{
+   position:absolute;
+   left:275px;
+   top: 30px;
+}
+.mm{
+   margin: 0px;
+   position:absolute;
+}
+.bankc{
+   position: absolute;
+   top: 60px;
+   margin:0px;
+}
+.v2{
+   position:absolute;
+    left: 300px;
+    width: 7px;
+    height: 10px;
+    top:28px;
+    color:#F2F3F5;
+}
+.ubar{
+   position: absolute;
+   width: 96%;
+   top: 65px;
+   left:10px;
+}
+.ac1{
+   position: absolute;
+   margin: 0px;
+   left: 80px;
+   top: 65px;
+   font-size: 14px;
+}
+.ac11{
+   left: 80px;
+   top: 85px;
+   position: absolute;
+   margin: 0px;
+}
+.ac2{
+   position: absolute;
+   margin: 0px;
+   left: 80px;
+   top: 150px;
+   font-size: 14px;
+}
+.ac22{
+   left: 80px;
+   top: 170px;
+   position: absolute;
+   margin: 0px;
+}
+.ac3{
+   position: absolute;
+   margin: 0px;
+   left: 80px;
+   top: 230px;
+   font-size: 14px;
+}
+.ac33{
+   left: 80px;
+   top: 250px;
+   position: absolute;
+   margin: 0px;
+}
+.ac4{
+   position: absolute;
+   margin: 0px;
+   left: 80px;
+   top: 310px;
+   font-size: 14px;
+}
+.ac44{
+   left: 80px;
+   top: 330px;
+   position: absolute;
+   margin: 0px;
+}
+.ac5{
+   position: absolute;
+   margin: 0px;
+   left: 80px;
+   top: 400px;
+   font-size: 14px;
+}
+.ac55{
+   left: 80px;
+   top: 420px;
+   position: absolute;
+   margin: 0px;
+}
+.minibox{
+   background:#F2F3F5;
+   width:45px;
+   height: 22px;
+   border-radius: 5px;
+   text-align: center;
+   left: 260px;
+   top:75px;
+   position: absolute;
+   font-size: 14px;
+}
+.minibox1{
+   background:#F2F3F5;
+   width:45px;
+   height: 22px;
+   border-radius: 5px;
+   text-align: center;
+   left: 260px;
+   top:160px;
+   position: absolute;
+   font-size: 14px;
+}
+.minibox2{
+   background:#F2F3F5;
+   width:45px;
+   height: 22px;
+   border-radius: 5px;
+   text-align: center;
+   left: 260px;
+   top:240px;
+   position: absolute;
+   font-size: 14px;
+}
+.minibox3{
+   background:#F2F3F5;
+   width:45px;
+   height: 22px;
+   border-radius: 5px;
+   text-align: center;
+   left: 260px;
+   top:325px;
+   position: absolute;
+   font-size: 14px;
+}
+.minibox5{
+   background:#F2F3F5;
+   width:45px;
+   height: 22px;
+   border-radius: 5px;
+   text-align: center;
+   left: 260px;
+   top:410px;
+   position: absolute;
+   font-size: 14px;
+}
+.minibox6{
+   background:#F2F3F5;
+   width:45px;
+   height: 22px;
+   border-radius: 5px;
+   text-align: center;
+   left: 280px;
+   top:18px;
+   position: absolute;
+   font-size: 14px;
+}
