@@ -1,0 +1,42 @@
+body{
+    background-image: url(http://down.699pic.com/photo/40017/4154.jpg?_upt=c0a3ab361680105274&_upd=Lovepik_com-400174154-soft-color-gradient-background.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.title{
+    text-align: center;
+    top: 120px;
+    position:absolute;
+}
+.little{
+  position: absolute;
+  top: 170px;
+  left: 20px;
+}
+
+.wo{
+    width: 250px;
+    height:250px;
+    position: absolute;
+    left: 460px;
+    top: 70px;
+    
+}
+a :hover{
+    border-bottom-color: transparent !important;
+    color: #6bd4c8
+}
+.pro{
+   position: absolute;
+   margin: 0px;
+   background-color: aliceblue;
+   border-radius: 5px;
+   left: 300px;   
+}
+.pro2{
+   position: absolute;
+   left: 390px;
+   background-color: aliceblue;
+   border-radius: 5px;
+}
