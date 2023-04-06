@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+    border: 5px dotted pink;
+    text-align: center;
+}
+
+a:link{
+    color:pink;
+}
+
+a:visited{
+    color:pink;
+}
+
+h1{
+    color:pink;
+}
+
+p{
+    color:pink;
+}

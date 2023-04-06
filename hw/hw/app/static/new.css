@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+    border: 5px dotted pink;
+    text-align: center;
+}
+
+button:hover{
+    color:pink;
+}
+
+
+option{
+    color:pink;
+}
+
+label{
+    color:pink;
+}
+

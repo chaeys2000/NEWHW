@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'home.css' %}"/>
+    <title>Document</title>
+</head>
+<body class="all">
+      <div class="middle">
+            <h1 class= 'bighead'><strong>윤석이의 이모저모</strong></h1>
+            <h3 class="zip">게시글 모아보기</h3>
+            <ul class="nodot">
+                 {% for post in posts %}
+                 <li style="list-style:none;">
+                     <a href="{% url 'detail' post.pk %}">{{ post.title }}</a> 
+                 </li>
+                 {% endfor %}
+              </ul>
+     </div>
+
+ <div class="bottom">
+        <p class="category">카테고리 모아보기</p>
+        <div class="cate">
+          <a href="{% url 'cate' '취미' %}">취미 ({{ hobby_len }})</a>
+          <a href="{% url 'cate' '개소리' %}">개소리 ({{ dog_len }})</a>
+          <a href="{% url 'cate' '일기' %}">일기 ({{ diary_len }})</a>
+      </div>
+ </div>
+
+    <div class="new">
+    <a href="{% url 'new' %}"> 글 작성하기 </a></div>
+</body>
+</html>
