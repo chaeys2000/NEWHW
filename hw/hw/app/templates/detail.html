@@ -22,5 +22,7 @@
         <div>{{post.time}}</div>
     </div>
     <a href="{% url 'home' %}">홈으로</a>
+    <a href="{% url 'update' post.pk %}">수정하기</a> 
+    <a href="{% url 'delete' post.pk %}">삭제하기 </a>
 </body>
 </html>

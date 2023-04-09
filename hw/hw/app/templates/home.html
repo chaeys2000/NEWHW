@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load tz %}
     <meta charset="UTF-8">
     {% load static %}
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,26 +10,21 @@
     <title>Document</title>
 </head>
 <body class="all">
-      <div class="middle">
-            <h1 class= 'bighead'><strong>윤석이의 이모저모</strong></h1>
+    
+            <h1 class= 'bighead'><strong>To Do LIST</strong></h1>
             <h3 class="zip">게시글 모아보기</h3>
-            <ul class="nodot">
-                 {% for post in posts %}
-                 <li style="list-style:none;">
-                     <a href="{% url 'detail' post.pk %}">{{ post.title }}</a> 
-                 </li>
-                 {% endfor %}
-              </ul>
-     </div>
 
- <div class="bottom">
-        <p class="category">카테고리 모아보기</p>
-        <div class="cate">
-          <a href="{% url 'cate' '취미' %}">취미 ({{ hobby_len }})</a>
-          <a href="{% url 'cate' '개소리' %}">개소리 ({{ dog_len }})</a>
-          <a href="{% url 'cate' '일기' %}">일기 ({{ diary_len }})</a>
-      </div>
- </div>
+            <div class="img">
+              <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA5MjVfNTcg%2FMDAxNjY0MTAwMjY5MTg3.3Adq5oHkXe3_J7qlJL0EPVscscu_t2Brphtvoh67uDwg._cssvqKcGrilQUyrzn0DwFMzaW78xosPhzXPsacSMCEg.JPEG.2908_hj%2Foutput_3839650818.jpg&type=sc960_832"/>
+            </div>
+
+            <div class="ul">
+                {% for post in posts %}
+                <div class="list"><li class="ul" style="list-style: none">
+                    <a href="{% url 'detail' post.pk %}"><input type='checkbox'>{{ post.title }} </a> | D-{{ post.days_left }} | 
+                </li>
+                {% endfor %}</div>
+            </div>
 
     <div class="new">
     <a href="{% url 'new' %}"> 글 작성하기 </a></div>

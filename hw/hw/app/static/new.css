@@ -1,19 +1,6 @@
 body{
-    background-color: black;
-    border: 5px dotted pink;
+    background-color:aquamarine;
+    border: 5px solid black;
     text-align: center;
-}
-
-button:hover{
-    color:pink;
-}
-
-
-option{
-    color:pink;
-}
-
-label{
-    color:pink;
 }
 

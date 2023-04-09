@@ -23,4 +23,6 @@ urlpatterns = [
     path('new/', views.new, name='new'),
     path('detail/<int:post_pk>/', views.detail, name='detail'),
     path('cate/<str:cate_name>/', views.cate, name='cate'),
+    path('update/<int:post_pk>/',views.update, name="update"),
+    path('delete/<int:post_pk>/', views.delete, name="delete"),
 ]
