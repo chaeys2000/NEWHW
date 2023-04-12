@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Post
+from .models import Post, Comment
 from django.utils import timezone
 from datetime import datetime
 
@@ -30,10 +30,22 @@ def new(request):
     return render(request, 'new.html')
 
 def detail(request, post_pk):
-    post = Post.objects.get(pk=post_pk)
-    time = Post.time
+   post = Post.objects.get(pk=post_pk)
+   time=Post.time
+  
+   if request.method == 'POST':
+       content = request.POST['content']
+       parent_comment_id = request.POST['parent_comment_id']
+       parent_comment = Comment.objects.get(pk=parent_comment_id) if parent_comment_id else None
+       Comment.objects.create(
+          post = post,
+          content = content,
+          parent_comment = parent_comment
+       )
+       return redirect('detail', post.pk)
+   
+   return render(request, 'detail.html', {'post':post, 'time':time})
 
-    return render(request, 'detail.html', {'post': post, 'time': time })
 
 def cate(request, cate_name):
     cate_type= cate_name
@@ -57,3 +69,8 @@ def delete(request, post_pk):
     post.delete()
 
     return redirect('home')
+
+def delete_comment(request, post_pk, comment_pk):
+   comment = Comment.objects.get(pk=comment_pk)
+   comment.delete()
+   return redirect('detail', post_pk)

@@ -11,18 +11,61 @@
 </head>
 <body>
     <div>
-        <h2> 카테고리 </h2>
-        <p> {{ post.cate }}</p>
-        <h2> 제목 </h2>
+        <h2>카테고리</h2>
+        <p>{{ post.cate }}</p>
+        <h2>제목</h2>
         <p>{{ post.title }}</p>
     </div>
     <div>
         <h2>내용</h2>
-        <p>{{post.content}}</p>
-        <div>{{post.time}}</div>
+        <p>{{ post.content }}</p>
+        <div>{{ post.time }}</div>
     </div>
     <a href="{% url 'home' %}">홈으로</a>
-    <a href="{% url 'update' post.pk %}">수정하기</a> 
-    <a href="{% url 'delete' post.pk %}">삭제하기 </a>
+    <a href="{% url 'update' post.pk %}">수정하기</a>
+    <a href="{% url 'delete' post.pk %}">삭제하기</a>
+
+    <!-- 대댓글 작성 폼 -->
+    <form method="post">
+        {% csrf_token %}
+        <input type="hidden" name="parent_comment_id" value="{{ parent_comment_id }}">
+        <!-- 부모 댓글의 ID를 hidden 필드로 전달 -->
+        <textarea name="content" rows="3" placeholder="댓글을 입력해주세요"></textarea>
+        <button type="submit">작성하기</button>
+    </form>
+
+    <!-- 댓글 목록 -->
+    <ul>
+        {% for comment in post.comments.all %}
+        <li>
+            {{ comment.content }}
+            <a href="{% url 'delete-comment' post.pk comment.pk %}">삭제</a>
+            <!-- 대댓글 작성 버튼 -->
+            <a href="{% url 'detail' post.pk %}?parent_comment_id={{ comment.pk }}">대댓글 작성</a>
+
+            <!-- 대댓글 목록 -->
+            <ul>
+                {% for reply in comment.replies.all %}
+                <li>{{ reply.content }}
+                    <a href="{% url 'delete-reply' post.pk comment.pk reply.pk %}">삭제</a>
+                </li>
+                {% endfor %}
+            </ul>
+
+            <!-- 대댓글 작성 폼 -->
+            <form method="post">
+                {% csrf_token %}
+                <input type="hidden" name="parent_comment_id" value="{{ comment.pk }}">
+                <!-- 부모 댓글의 ID를 hidden 필드로 전달 -->
+                <textarea name="content" rows="3" placeholder="대댓글을 입력해주세요"></textarea>
+                <button type="submit">작성하기</button>
+            </form>
+        </li>
+        {% endfor %}
+    </ul>
 </body>
+
+
+
+
 </html>

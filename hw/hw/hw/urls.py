@@ -25,4 +25,6 @@ urlpatterns = [
     path('cate/<str:cate_name>/', views.cate, name='cate'),
     path('update/<int:post_pk>/',views.update, name="update"),
     path('delete/<int:post_pk>/', views.delete, name="delete"),
+    path('delete-comment/<int:post_pk>/<int:comment_pk>', views.delete_comment, name='delete-comment'),
+    path('delete-comment/<int:post_pk>/<int:comment2_pk>', views.delete_comment, name='delete-comment'),
 ]

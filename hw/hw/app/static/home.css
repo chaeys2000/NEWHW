@@ -1,6 +1,4 @@
-ul{
-    padding: 0px;
-}
+
 body{
     background-color:aquamarine;
     border: 5px solid black;
@@ -24,4 +22,5 @@ body{
 
 .new{
     margin-top: 15px;
+    text-align: center;
 }
