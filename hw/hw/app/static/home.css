@@ -1,26 +1,118 @@
 
-body{
-    background-color:aquamarine;
-    border: 5px solid black;
+/* 전체 body에 대한 스타일링 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #f8f8f8;
+}
+button{
+  box-sizing: unset;
+}
+/* navigation bar에 대한 스타일링 */
+#navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 70px;
+  padding: 0 20px;
 }
 
-.bighead{
-    text-align: center;
+.navbar__menu__item {
+  margin-right: 10px;
+  font-size: 18px;
 }
 
-.zip{
-    text-align: center;
+.primaryAction {
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
 }
 
-.img{
-    text-align: center;
+/* To Do List의 제목과 이미지에 대한 스타일링 */
+.bighead {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 48px;
+  color: #333333;
 }
 
-.ul{
-    text-align: center;
+.zip {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 24px;
+  color: #333333;
 }
 
-.new{
-    margin-top: 15px;
-    text-align: center;
+.fish {
+  display: block;
+  margin: 0 auto;
+  max-width: 600px;
+  height: auto;
+  margin-top: 30px;
+}
+
+/* To Do List 항목들에 대한 스타일링 */
+.ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list {
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background-color: #ffffff;
+}
+
+.list a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.list input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* 글 작성하기 버튼에 대한 스타일링 */
+.new {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 24px;
+  color: #333333;
+}
+
+.new a {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: 2px solid #333333;
+  color: #333333;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.new a:hover {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.kk{
+  width: 9%;
+}
+.gg{
+  width: 7%
 }

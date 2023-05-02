@@ -1,7 +1,7 @@
 from django.db import models
 import datetime
 from datetime import datetime, timedelta
-
+from django.contrib.auth.models import User
 # Create your models here.
 class Post(models.Model):
     cate = models.CharField(max_length=200)
